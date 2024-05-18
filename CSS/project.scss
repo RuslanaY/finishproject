@@ -150,12 +150,12 @@ h5{
       margin-bottom: 60px;
     }
     }
-  }
   .flex-box-2 {
-margin-right: 0;
+    margin-right: 0;
   }
-.flex-container_2{
+  }
 
+.flex-container_2{
   ul {
     display: flex;
     justify-content: center;
@@ -458,10 +458,46 @@ margin-bottom: 81px;
     }
   }
 
-}
-  .social_bloc{
-    display: inline-block;
+  .flex-box-6 {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    .social_bloc {
+      ul {
+        display: flex;
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 33px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 10px;
+
+        li {
+          display: inline-block;
+        }
+      }
+    }
+    .box-f{
+      display: flex;
+      justify-content: center;
+    }
   }
+  .brex{
+    p{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      color: #bcbdbd;
+      margin: 10px 50px;
+    }
+  }
+}
+
+
 
 
 

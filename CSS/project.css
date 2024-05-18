@@ -148,8 +148,7 @@ header nav ul li a {
   text-decoration: none;
   margin-bottom: 60px;
 }
-
-.flex-box-2 {
+.flex-container .flex-box-2 {
   margin-right: 0;
 }
 
@@ -457,9 +456,36 @@ header nav ul li a {
   color: #bcbdbd;
   font-weight: normal;
 }
-
-.social_bloc {
+.footer-container .flex-box-6 {
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.footer-container .flex-box-6 .social_bloc ul {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 33px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 10px;
+}
+.footer-container .flex-box-6 .social_bloc ul li {
   display: inline-block;
+}
+.footer-container .flex-box-6 .box-f {
+  display: flex;
+  justify-content: center;
+}
+.footer-container .brex p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: #bcbdbd;
+  margin: 10px 50px;
 }
 
 /*# sourceMappingURL=project.css.map */
