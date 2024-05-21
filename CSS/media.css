@@ -1,0 +1,68 @@
+/* Медіазапити для адаптивності */
+
+/* Для екранів шириною до 1200px */
+@media (max-width: 1200px) {
+    body {
+        width: 100%;
+        padding: 0 20px;
+    }
+    header, .info_1, .footer-container {
+        width: 100%;
+    }
+}
+
+/* Для екранів шириною до 992px */
+@media (max-width: 992px) {
+    .flex-container, .flex-container_2, .flex-container_4, .content-block_1, .content-block_2, .content-block_3, .content-block_4 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content-block_1 {
+        height: auto;
+    }
+    .content-block_1 p, .content-block_1 span, .content-block_2 p, .content-block_2 a, .content-block_3, .content-block_4 h3, .content-block_4 p, .footer-container {
+        margin: 0 20px;
+    }
+    .buttons-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Для екранів шириною до 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .account, nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .account a, nav li a {
+        margin-right: 0;
+    }
+    .contact {
+        width: 100%;
+        justify-content: center;
+    }
+    .content-block_1 img {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Для екранів шириною до 576px */
+@media (max-width: 576px) {
+    .btn-1, .btn-2, .btn-3, .btn-4 {
+        width: 100%;
+        text-align: center;
+    }
+    .info_1 h4, .info_1 p, .footer-container, .footer-container p, .footer-container ul, .footer-container ul li a {
+        text-align: center;
+    }
+    .info_1 h4, .info_1 p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
