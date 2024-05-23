@@ -19,17 +19,30 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+main {
   width: 1200px;
   margin: auto;
 }
 
 header {
+  width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   align-items: flex-start;
-  width: 1200px;
 }
 header .box_header {
   margin-top: 15px;
@@ -38,7 +51,6 @@ header .account {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-top: 15px;
 }
 header .account a {
   margin-right: 38px;
@@ -55,20 +67,20 @@ header .contact {
   width: 148px;
   height: 36px;
   background: #f46a35;
-  margin-top: 5px;
   margin-right: 0;
 }
 header .contact a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 157%;
   color: #fff;
   text-decoration: none;
+}
+header .contact:hover {
+  background-color: #d55c2c;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 header nav {
   list-style: none;
   display: flex;
-  font-weight: 700;
 }
 header nav ul {
   display: flex;
@@ -76,12 +88,19 @@ header nav ul {
   align-items: center;
 }
 header nav ul li {
-  margin-right: 57px;
+  margin-right: 50px;
 }
 header nav ul li a {
   text-decoration: none;
   color: #333;
   font-weight: normal;
+}
+header nav ul li a .arrow {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+header nav ul li:hover .arrow {
+  transform: rotate(180deg);
 }
 
 .flex-container {
@@ -98,6 +117,7 @@ header nav ul li a {
   white-space: normal;
   word-break: keep-all;
   width: 400px;
+  margin-top: -70px;
 }
 .flex-container .flex-box-1 .buttons-container::after {
   content: "";
@@ -136,6 +156,10 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
+.flex-container .flex-box-1 .buttons-container .btn-1:hover {
+  background-color: #d55c2c;
+  transform: scale(1.05);
+}
 .flex-container .flex-box-1 .buttons-container .btn-2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -150,6 +174,10 @@ header nav ul li a {
   line-height: 157%;
   color: #212121;
   text-decoration: none;
+}
+.flex-container .flex-box-1 .buttons-container .btn-2:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
 }
 .flex-container .flex-box-1 h5 {
   font-weight: 400;
@@ -267,10 +295,17 @@ header nav ul li a {
   font-size: 16px;
   cursor: pointer;
 }
+.flex-container_4 .btn-3:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+.flex-container_4 .btn-3:hover a {
+  color: #000;
+}
 
 .info_1 {
   background: #f9f9f9;
-  width: 1200px;
   height: 1000px;
 }
 .info_1 h4 {
@@ -314,14 +349,23 @@ header nav ul li a {
   color: #212121;
   text-decoration: none;
 }
+.info_1 .btn-4:hover {
+  background-color: #212121;
+  color: #fff;
+  transform: scale(1.05);
+}
+.info_1 .btn-4:hover a {
+  color: #fff;
+}
 
 .content-block_1 {
   display: flex;
   align-items: center;
   background: #fff;
   width: 1200px;
-  height: 664px;
+  height: 400px;
   text-align: center;
+  margin-bottom: 100px;
 }
 .content-block_1 .content {
   text-align: center;
@@ -369,9 +413,9 @@ header nav ul li a {
   margin-bottom: 81px;
 }
 .content-block_2 p {
-  margin-right: 69px;
+  margin-right: 50px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 140%;
   color: #212121;
 }
@@ -457,6 +501,10 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
+.content-block_4 .buttons-container .btn-1:hover {
+  background-color: #d55c2c;
+  transform: scale(1.05);
+}
 .content-block_4 .buttons-container .btn-2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -471,11 +519,18 @@ header nav ul li a {
   color: #212121;
   text-decoration: none;
 }
+.content-block_4 .buttons-container .btn-2:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #171717;
+}
 
 .footer-container {
   width: 1200px;
-  height: 100%;
-  background: #171717;
+  margin: auto;
   flex-wrap: wrap;
 }
 .footer-container .flex-box-5 .footer_product {
