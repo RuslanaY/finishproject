@@ -38,7 +38,6 @@ header .account {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-top: 15px;
 }
 header .account a {
   margin-right: 38px;
@@ -55,20 +54,15 @@ header .contact {
   width: 148px;
   height: 36px;
   background: #f46a35;
-  margin-top: 5px;
   margin-right: 0;
 }
 header .contact a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 157%;
   color: #fff;
   text-decoration: none;
 }
 header nav {
   list-style: none;
   display: flex;
-  font-weight: 700;
 }
 header nav ul {
   display: flex;
@@ -76,7 +70,7 @@ header nav ul {
   align-items: center;
 }
 header nav ul li {
-  margin-right: 57px;
+  margin-right: 50px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -98,6 +92,7 @@ header nav ul li a {
   white-space: normal;
   word-break: keep-all;
   width: 400px;
+  margin-top: -70px;
 }
 .flex-container .flex-box-1 .buttons-container::after {
   content: "";
@@ -320,8 +315,9 @@ header nav ul li a {
   align-items: center;
   background: #fff;
   width: 1200px;
-  height: 664px;
+  height: 400px;
   text-align: center;
+  margin-bottom: 100px;
 }
 .content-block_1 .content {
   text-align: center;
@@ -369,9 +365,9 @@ header nav ul li a {
   margin-bottom: 81px;
 }
 .content-block_2 p {
-  margin-right: 69px;
+  margin-right: 50px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 140%;
   color: #212121;
 }
